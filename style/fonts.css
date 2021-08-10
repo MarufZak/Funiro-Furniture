@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons.ttf');
+    font-weight: 400;
+}
+
+::after , ::before {
+    font-family: 'icons';
+} 
+
+
+.icon-location::before {
+    content: "\e904";
+}
+.icon-phone::before {
+    content: "\e905";
+}
+.icon-arrow-down::before {
+    content: "\e900";
+}
+.icon-arrow-link::before {
+    content: "\e901";
+}
+.icon-cart::before {
+    content: "\e902";
+}
+.icon-favorite::before {
+    content: "\e903";
+}
+.icon-search::before {
+    content: "\e906";
+}
+.icon-send::before {
+    content: "\e907";
+}
+.icon-share::before {
+    content: "\e908";
+}
