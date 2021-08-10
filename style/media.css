@@ -37,6 +37,9 @@
         justify-content: start;
         transition: 0.5s;
     }
+    body.active {
+        overflow: hidden;
+    }
     body.active::before {
         top: 0;
     }
@@ -47,6 +50,7 @@
     .header__main {
         flex: 0 0 calc(600/1210*100%);
     }
+
 }
 @media (max-width: 767px) {
     .header__body {

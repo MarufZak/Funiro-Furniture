@@ -8,7 +8,11 @@
 
 body {
     font-family: "Gilroy";
-    min-height: 100vh;
+    min-height: calc(var(--vh,1vh)*100);
+}
+
+body.lock {
+    overflow: hidden;
 }
 
 body::before {
@@ -354,10 +358,11 @@ main {
 .footer__form {
     display: flex;
     align-items: center;
-    height: 36px;
+    height: 45px;
 }
 .footer__form-input {
-    padding: 10px 12px;
+    padding: 0 12px;
+    height: 100%;
     border: none;
     background: var(--input-bg);
 }
@@ -372,6 +377,9 @@ main {
 }
 
 
+.footer__form-submit {
+    display: none;
+}
 
 
 

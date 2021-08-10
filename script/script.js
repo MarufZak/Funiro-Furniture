@@ -1,5 +1,8 @@
 "use strict"
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh',`${vh}px`)
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -74,6 +77,7 @@ if (isMobile.any()) {
         if (e.target.classList.contains('header__burger')) {
             headerNav.classList.toggle('active');
             headerBurger.classList.toggle('active');
+            document.body.classList.toggle('lock');
         } 
     })
 
